@@ -2,11 +2,12 @@ var fs = require("fs")
 var steem = require("steem")
 var SSC = require("sscjs")
 var config = require("./config.js").config
+var path = require('path').dirname(require.main.filename)
 
 const ssc = new SSC('https://api.steem-engine.com/rpc')
 
 function genList(callback){
-    fs.readFile("./ToSend.txt", (err, data) => {
+    fs.readFile(`${path}/ToSend.txt`, (err, data) => {
         var csv = data.toString().toLowerCase()
         callback(csvFormattor(csv))
     })

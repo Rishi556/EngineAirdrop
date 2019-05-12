@@ -1,3 +1,2 @@
-rishi556.cold,1
-rishi556.actifit,2
-Giftgiver,3
+Rishi556,1
+Sn0n,1
