@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "bin": {
+    "airdrop": "cli.js"
+  }
 }
