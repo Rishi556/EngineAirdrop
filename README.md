@@ -1,6 +1,6 @@
 # EngineAirdrop
 
-EngineAirdrop is a free tool for anyone to use to send airdrops to recipiants on Steem-Engine.
+EngineAirdrop is a free tool for anyone to use to send airdrops to recipients on Steem-Engine.
 
 To use this, simply clone this, `cd` to the directory and use `npm i` to install the dependencies.
 Next use `npm link` to be able to use the command line interface for it.
@@ -13,7 +13,7 @@ username2,amountToSend2
 
 There's an example of this within the file itself, or here : https://github.com/Rishi556/EngineAirdrop/blob/master/ToSend.txt.
 
-Next edit the `config.js` file. There's four fields and you need to change each one to be correct for you. Theres insructions right next to each field if you have any questions.
+Next edit the `config.js` file. There's four fields and you need to change each one to be correct for you. Theres instructions right next to each field if you have any questions.
 
 Finally, you are ready to start.
 
