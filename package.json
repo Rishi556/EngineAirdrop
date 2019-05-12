@@ -11,5 +11,8 @@
   "license": "MIT",
   "bin": {
     "airdrop": "cli.js"
+  },
+  "dependencies": {
+    "sscjs": "0.0.7"
   }
 }

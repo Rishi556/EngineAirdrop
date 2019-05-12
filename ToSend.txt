@@ -1,3 +1,3 @@
-rishi556.cold,100
-rishi556.actifit,200
-giftgiver,200
+rishi556.cold,1
+rishi556.actifit,2
+Giftgiver,3

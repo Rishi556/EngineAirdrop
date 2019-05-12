@@ -1,6 +1,4 @@
 #! /usr/bin/env node
-
-var fs = require("fs")
 var index = require("./index.js")
 
 if (process.argv[2] == "genList"){
@@ -10,6 +8,11 @@ if (process.argv[2] == "genList"){
     })
 } else if (process.argv[2] == "processList") {
     index.processList(res => {
+        console.log(res)
+        process.exit(0)
+    })
+} else if (process.argv[2] == "send") {
+    index.send(res => {
         console.log(res)
         process.exit(0)
     })
