@@ -5,7 +5,7 @@ EngineAirdrop is a free tool for anyone to use to send airdrops to recipiants on
 To use this, simply clone this, `cd` to the directory and use `npm i` to install the dependencies.
 Next use `npm link` to be able to use the command line interface for it.
 
-Now edit the `ToSend.txt` file. Follow this format,
+Now edit the `ToSend.txt` file. Follow this format, each person should be on their own line, follwed by a comma and how much they should recieve,
 ```
 username,amountToSend
 username2,amountToSend2
