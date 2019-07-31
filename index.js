@@ -52,7 +52,7 @@ function send(callback){
             genList(list => {
                 if (balance >= getTotalToSend(list) || config.mode.toLowerCase() == "issue"){
                     var keys = Object.keys(list)
-                    console.log(`Starting...\nEstimated Time To Completion is ${keys.length * 4} seconds.`)
+                    console.log(`Starting...\nEstimated Time To Completion is ${keys.length * 10} seconds.`)
                     var sending = setInterval(() => {
                         var sendJSON = {"contractName":"tokens","contractAction":config.mode.toLowerCase() ,"contractPayload":{"symbol": config.tokenSymbol,"to": keys[c],"quantity": list[keys[c]],"memo":"Test"}}
                         if (keys[c]){
