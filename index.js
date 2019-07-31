@@ -69,7 +69,7 @@ function send(callback){
                             clearInterval(sending)
                             callback("Done")
                         }
-                    } , 4 * 1000)
+                    } , 10 * 1000)
                 } else {
                     callback(`The account only has ${balance} while the total needed to send is ${getTotalToSend(list)}.`)
                 }
