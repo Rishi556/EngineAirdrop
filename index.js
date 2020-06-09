@@ -1,10 +1,10 @@
 var fs = require("fs")
-var steem = require("steem")
+var hive = require("@hiveio-hive-js")
 var SSC = require("sscjs")
 var config = require("./config.js").config
 var path = require('path').dirname(require.main.filename)
 
-const ssc = new SSC('https://api.steem-engine.com/rpc')
+const ssc = new SSC('https://api.hive-engine.com/rpc')
 
 function genList(callback){
     fs.readFile(`${path}/ToSend.txt`, (err, data) => {
@@ -56,7 +56,7 @@ function send(callback){
                     var sending = setInterval(() => {
                         var sendJSON = {"contractName":"tokens","contractAction":config.mode.toLowerCase() ,"contractPayload":{"symbol": config.tokenSymbol,"to": keys[c],"quantity": list[keys[c]],"memo":"Test"}}
                         if (keys[c]){
-                            steem.broadcast.customJson(config.accountPrivateActiveKey, [config.accountName], null, "ssc-mainnet1", JSON.stringify(sendJSON), function(err, result) {
+                            hive.broadcast.customJson(config.accountPrivateActiveKey, [config.accountName], null, "ssc-mainnet1", JSON.stringify(sendJSON), function(err, result) {
                                 if (!err){
                                     console.log(`Sent ${list[keys[c]]} to ${keys[c]}.`)
                                     c++
