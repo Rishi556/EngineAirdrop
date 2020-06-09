@@ -13,6 +13,7 @@
     "airdrop": "cli.js"
   },
   "dependencies": {
-    "sscjs": "0.0.7"
+    "sscjs": "0.0.7",
+    "hiveio/hive-js" : "@latest"
   }
 }
