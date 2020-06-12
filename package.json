@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "sscjs": "0.0.7",
-    "hiveio/hive-js" : "@latest"
+    "@hiveio/hive-js": "^0.8.0"
   }
 }
