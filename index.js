@@ -1,5 +1,5 @@
 var fs = require("fs")
-var hive = require("@hiveio-hive-js")
+var hive = require("@hiveio/hive-js")
 var SSC = require("sscjs")
 var config = require("./config.js").config
 var path = require('path').dirname(require.main.filename)
