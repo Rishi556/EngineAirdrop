@@ -13,13 +13,13 @@ function genList(callback){
     })
 }
 
-//Looks for accounts that aren't steem accounts.
+//Looks for accounts that aren't hive accounts.
 function processList(callback){
     genList(list => {
         var keys = Object.keys(list)
         var found = []
         var diff = []
-        steem.api.getAccounts(keys, function(err, result) {
+        hive.api.getAccounts(keys, function(err, result) {
             for (i in result){
                 found.push(result[i].name)
             }
