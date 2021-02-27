@@ -19,7 +19,7 @@ Finally, you are ready to start.
 
 You can see who'll get how much by typing in `airdrop genList`. Use this to confirm that each person is getting the correct amount and make the changes if necessary.
 
-You can also use `airdrop processList` to make sure that all accounts are on steem. If an array with names is returned, those are the ones that don't have steem accounts.
+You can also use `airdrop processList` to make sure that all accounts are on hive. If an array with names is returned, those are the ones that don't have hive accounts.
 
 `airdrop help` gives you the help menu.
 
