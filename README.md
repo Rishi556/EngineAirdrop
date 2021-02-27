@@ -1,6 +1,6 @@
 # EngineAirdrop
 
-EngineAirdrop is a free tool for anyone to use to send airdrops to recipients on Steem-Engine.
+EngineAirdrop is a free tool for anyone to use to send airdrops to recipients on Hive-Engine.
 
 To use this, simply clone this, `cd` to the directory and use `npm i` to install the dependencies.
 Next use `npm link` to be able to use the command line interface for it.
